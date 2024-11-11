@@ -1,15 +1,6 @@
-def sum_dicts(*kdicts) -> dict:
-    # write your code here
-    result = {}
-    for dictionary in kdicts:
-        for item in dictionary:
-            if not item in result:
-                result.update({item: dictionary[item]})
-            else:
-                 result.update({item: result[item] + dictionary[item]})
-    return result
+a = [True, "a1", "b1"]
+b = [False, "a1", "c1"]
 
-first = {"a": 2, "b": 4};
-second = {"a": 2, "b": 10};
-third = {"d": -5, "e"};
-print(sum_dicts(first, second, third))
+a0 = set(a)
+b0 = set(b)
+print(a0&b0)
