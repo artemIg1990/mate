@@ -11,5 +11,5 @@ def sum_dicts(*kdicts) -> dict:
 
 first = {"a": 2, "b": 4};
 second = {"a": 2, "b": 10};
-third = {"d": -5};
+third = {"d": -5, "e"};
 print(sum_dicts(first, second, third))
